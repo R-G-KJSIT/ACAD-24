@@ -1,2 +1,2 @@
-# ACAD-24
-All codes performed during the Academic year 2024
+# Machine Learning
+All codes performed in Machine Learning during the Academic year 2024
