@@ -1,2 +1,2 @@
-# ACAD-24
-All codes performed during the Academic year 2024
+# Artificial Neural Network
+All Artificial Neural Network codes performed during the Academic year 2024
