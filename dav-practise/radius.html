@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<script>
+  // Create an array of data
+  var data = [10, 20, 30, 40, 50];
+
+  // Select the body element
+  var body = d3.select("body");
+
+  // Create SVG container
+  var svg = body.append("svg")
+    .attr("width", 500)
+    .attr("height", 200);
+
+  // Create circles with increasing radius
+  svg.selectAll("circle")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", (d, i) => i * 80 + 50)
+    .attr("cy", 100)
+    .attr("r", d => d)
+    .attr("fill", "steelblue");
+
+</script>
+
+</body>
+</html>

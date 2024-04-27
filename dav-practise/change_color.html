@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<script>
+  // Array of colors
+  var colors = ["red", "green", "blue", "orange", "purple"];
+
+  // Select the body element
+  var body = d3.select("body");
+
+  // Create SVG container
+  var svg = body.append("svg")
+    .attr("width", 500)
+    .attr("height", 200);
+
+  // Create circles with changing colors
+  svg.selectAll("circle")
+    .data(colors)
+    .enter()
+    .append("circle")
+    .attr("cx", (d, i) => i * 80 + 50)
+    .attr("cy", 100)
+    .attr("r", 30)
+    .attr("fill", d => d); // Use the color value as fill color
+
+</script>
+
+</body>
+</html>

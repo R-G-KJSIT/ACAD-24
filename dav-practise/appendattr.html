@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <svg id="chart" width="400" height="200"></svg>
+  <script>
+    // Sample data
+    var data = [25, 50, 75, 100];
+
+    // Select the SVG element
+    var svg = d3.select("#chart");
+
+    // Bind data to circle elements and append new circles
+    svg.selectAll("circle")
+       .data(data)
+       .enter()
+       .append("circle")
+       .attr("cx", (d, i) => i * 80 + 40) // Set x-coordinate
+       .attr("cy", 100) // Set y-coordinate
+       .attr("r", (d) => d) // Set radius based on data value
+       .attr("fill", "steelblue"); // Set fill color
+  </script>
+</body>
+</html>

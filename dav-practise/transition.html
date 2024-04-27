@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body bgcolor="black">
+    <!-- Create an SVG with a rectangle -->
+    <svg width="960px" height="400px">
+        <rect id="my_rect" x="10" y="200" width="200" height="30" stroke="black" fill="#ff6942" stroke-width="1"/>
+    </svg>
+
+    <script>
+        d3.select("#my_rect")
+            .transition()
+            .duration(5000)
+            .attr("width", "400");
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas Tutorial</title>
+<style>
+body {
+    margin: 0px;
+    border: 1px solid #000;
+}
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="500" height="500"></canvas>
+
+<script type="text/javascript">
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Set the color to green
+ctx.fillStyle = 'green';
+
+// Draw a filled square
+ctx.fillRect(0, 0, 500, 500);
+</script>
+
+</body>
+</html>
