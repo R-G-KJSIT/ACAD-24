@@ -1,2 +1,2 @@
-# ACAD-24
-All codes performed during the Academic year 2024
+# Deep Learning
+All codes performed in Deep learning during the Academic year 2024
