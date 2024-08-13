@@ -1,2 +1,2 @@
-# ACAD-24
-All codes performed during the Academic year 2024
+# Cryptography & Network Security
+All codes performed in Cryptography & Network Security during the Academic year 2024
